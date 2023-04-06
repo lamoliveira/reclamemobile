@@ -7329,9 +7329,66 @@
         console.log("devtype: " + devType)
         console.log("launch0")
         launchViz(0);
+                // Determines the correct viz layout according to screen sizes.
+                if (window.matchMedia("(max-width: 480px)").matches) {
+            //alert("I am a phone layout!");
+            devType = 'phone';
+            vWidth = 415;
+            vHeight = 1000;
+            //options.device = 'phone';
+        } else if (window.matchMedia("(max-width: 980px)").matches) {
+            //alert("I am a tablet layout!");
+            devType = 'tablet';
+            vWidth = 980;
+            //options.device = 'tablet';
+        } else {
+            //alert("I am a desktop layout!");
+            devType = 'desktop';
+            vWidth = 1666;
+            vHeight = 900;
+            //options.device = 'desktop';
+        }
 
         launchViz(1);
+                // Determines the correct viz layout according to screen sizes.
+                if (window.matchMedia("(max-width: 480px)").matches) {
+            //alert("I am a phone layout!");
+            devType = 'phone';
+            vWidth = 415;
+            vHeight = 1900;
+            //options.device = 'phone';
+        } else if (window.matchMedia("(max-width: 980px)").matches) {
+            //alert("I am a tablet layout!");
+            devType = 'tablet';
+            vWidth = 980;
+            //options.device = 'tablet';
+        } else {
+            //alert("I am a desktop layout!");
+            devType = 'desktop';
+            vWidth = 1666;
+            vHeight = 900;
+            //options.device = 'desktop';
+        }
         launchViz(2);
+                // Determines the correct viz layout according to screen sizes.
+                if (window.matchMedia("(max-width: 480px)").matches) {
+            //alert("I am a phone layout!");
+            devType = 'phone';
+            vWidth = 415;
+            vHeight = 1800;
+            //options.device = 'phone';
+        } else if (window.matchMedia("(max-width: 980px)").matches) {
+            //alert("I am a tablet layout!");
+            devType = 'tablet';
+            vWidth = 980;
+            //options.device = 'tablet';
+        } else {
+            //alert("I am a desktop layout!");
+            devType = 'desktop';
+            vWidth = 1666;
+            vHeight = 900;
+            //options.device = 'desktop';
+        }
         launchViz(3);
 
 
